@@ -1,12 +1,17 @@
 import "./App.css";
-import Cards from "./components/Cards/Cards";
 import Navbar from "./components/Navbar/Navbar";
+import TokenExchangeBar from "./components/TokenExchange/TokenExchangeBar";
+import Cards from "./components/Cards/Cards";
+// import TokenExchangeCard from "./components/TokenExchange/TokenExchangeCard";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#f9f9fe]">
       <Navbar />
-      <Cards />
+      <TokenExchangeBar />
+      <div className="container">
+        <Cards />
+      </div>
     </div>
   );
 }
