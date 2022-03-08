@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Cards() {
   return (
-    <div className="grid place-items-center mt-20 bg-[#f9f9fe]">
+    <div className="grid place-items-center bg-[#f9f9fe]">
       <div class="w-[485px] h-[300px] rounded shadow-md shadow-[4px 4px 4px rgba(0, 0, 0, 0.25)] bg-[#ffffff]">
         <div class="p-4 divide-y divide-300  divide-[#0000005b]">
           <div className="Heading flex flex-row">
