@@ -18,6 +18,7 @@ module.exports = {
       },
       "mb-purple": "#4F3CC8",
       "mb-green": "#00ED85",
+      "mb-offWhite": "#F9F9FE",
     },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
