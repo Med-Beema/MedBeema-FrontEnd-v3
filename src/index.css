@@ -7,3 +7,9 @@
 .nav-item.active {
   @apply text-mb-green;
 }
+.nav-item-getCovered::selection,
+.nav-item-getCovered:active,
+.nav-item-getCovered.active {
+  @apply text-mb-green;
+  @apply underline;
+}

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import TokenExchangeBar from "./components/TokenExchange/TokenExchangeBar";
 import Cards from "./components/Cards/Cards";
 import Claims from "./components/Claims/Claims";
+import GetCovered from "./components/GetCovered/GetCovered";
 // import TokenExchangeCard from "./components/TokenExchange/TokenExchangeCard";
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
       <Navbar />
       <TokenExchangeBar />
       <div className="container">
-        {/* <Cards /> */}
-        <Claims />
+        {/* <Cards />
+        <Claims /> */}
+        <GetCovered />
       </div>
     </div>
   );
