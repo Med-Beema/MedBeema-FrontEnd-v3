@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import TokenExchangeBar from "./components/TokenExchange/TokenExchangeBar";
 import Cards from "./components/Cards/Cards";
+import Claims from "./components/Claims/Claims";
 // import TokenExchangeCard from "./components/TokenExchange/TokenExchangeCard";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <TokenExchangeBar />
       <div className="container">
-        <Cards />
+        {/* <Cards /> */}
+        <Claims />
       </div>
     </div>
   );
