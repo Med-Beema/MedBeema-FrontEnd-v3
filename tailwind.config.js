@@ -19,6 +19,7 @@ module.exports = {
       "mb-purple": "#4F3CC8",
       "mb-green": "#00ED85",
       "mb-offWhite": "#F9F9FE",
+      "mb-gray": "#5E5A5A",
     },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
@@ -29,5 +30,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,15 +9,18 @@ function Navbar() {
           <h1 className="nav-brand text-3xl font-bold ">MedBeema</h1>
 
           <ul className="nav-items flex flex-row gap-16 text-lg">
-            <Link to={"/"}>
-              <li className="nav-item active">Get Cover</li>
-            </Link>
-            <Link to={"/tokens"}>
+            <NavLink exact="true" activeClassName="active" to="/">
+              <li className="nav-item">Get Cover</li>
+            </NavLink>
+            <NavLink activeClassName="active" to="/tokens">
               <li className="nav-item">Tokens</li>
-            </Link>
-            <Link to={"/claims"}>
+            </NavLink>
+            <NavLink activeClassName="active" to={"/claims"}>
               <li className="nav-item">Claims</li>
-            </Link>
+            </NavLink>
+            <NavLink activeClassName="active" to={"/stake"}>
+              <li className="nav-item">Stake</li>
+            </NavLink>
           </ul>
 
           <button className="bg-mb-purple rounded-lg py-2.5 px-7">

@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="bg-mb-offWhite">
+    <div className="bg-mb-offWhite min-h-screen">
       <Navbar />
 
       {/* Routes */}

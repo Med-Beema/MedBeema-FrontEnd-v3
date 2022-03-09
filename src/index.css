@@ -4,12 +4,15 @@
 
 .nav-item:hover,
 .nav-item:active,
-.nav-item.active {
+.nav-item.active,
+.active > .nav-item {
   @apply text-mb-green;
 }
 .nav-item-getCovered::selection,
 .nav-item-getCovered:active,
-.nav-item-getCovered.active {
+.nav-item-getCovered.active,
+.active > .nav-item-getCovered {
   @apply text-mb-green;
-  @apply underline;
+  @apply border-mb-green border-b-4 border-solid;
+  /* @apply underline; */
 }
