@@ -7,7 +7,7 @@ function TokenExchangeCard(props) {
       <div className="flex flex-row justify-around text-3xl text-center pt-4">
         <input
           type="numeric"
-          value={0}
+          placeholder={0}
           className="w-24 text-right px-4 bg-transparent"
         />
         <h2 className="">{props.currency}</h2>
