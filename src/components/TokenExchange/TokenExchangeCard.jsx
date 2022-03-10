@@ -9,6 +9,13 @@ function TokenExchangeCard(props) {
           type="numeric"
           placeholder={0}
           className="w-24 text-right px-4 bg-transparent"
+          onChange={
+            props.type === "Receive"
+              ? (e) => props.handleTokenChange(e.target.value)
+              : null
+          }
+          disabled={props.type === "Receive" ? false : true}
+          value={props.type === "Receive" ? props.tokenAmount : props.ethAmount}
         />
         <h2 className="">{props.currency}</h2>
       </div>

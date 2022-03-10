@@ -22,8 +22,8 @@ export default function Claims() {
             </button>
           </div>
           <div className="py-6">
-            <table class="min-w-full">
-              <thead class="text-lg text-[#7A7A7A] font-semibold border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700">
+            <table className="min-w-full">
+              <thead className="text-lg text-[#7A7A7A] font-semibold border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700">
                 <tr>
                   <th>Claim ID</th>
                   <th>Claimed Amount</th>
@@ -32,26 +32,26 @@ export default function Claims() {
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
-                  <td class="py-4 px-6 whitespace-nowrap">1</td>
-                  <td class="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td class="py-4 px-6 whitespace-nowrap text-mb-green">
+                <tr className="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
+                  <td className="py-4 px-6 whitespace-nowrap">1</td>
+                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
+                  <td className="py-4 px-6 whitespace-nowrap text-mb-green">
                     Accepted
                   </td>
-                  <td class="py-4 px-8 whitespace-nowrap">
+                  <td className="py-4 px-8 whitespace-nowrap">
                     <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
                       View Details
                     </div>
                   </td>
                 </tr>
 
-                <tr class="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
-                  <td class="py-4 px-6 whitespace-nowrap">1</td>
-                  <td class="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td class="py-4 px-6 whitespace-nowrap text-mb-green">
+                <tr className="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
+                  <td className="py-4 px-6 whitespace-nowrap">1</td>
+                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
+                  <td className="py-4 px-6 whitespace-nowrap text-mb-green">
                     Accepted
                   </td>
-                  <td class="py-4 px-6 whitespace-nowrap">
+                  <td className="py-4 px-6 whitespace-nowrap">
                     <div
                       className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white"
                       onClick={handleClick}
@@ -61,13 +61,13 @@ export default function Claims() {
                   </td>
                 </tr>
 
-                <tr class="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
-                  <td class="py-4 px-6 whitespace-nowrap">1</td>
-                  <td class="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td class="py-4 px-6 whitespace-nowrap text-mb-green">
+                <tr className="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
+                  <td className="py-4 px-6 whitespace-nowrap">1</td>
+                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
+                  <td className="py-4 px-6 whitespace-nowrap text-mb-green">
                     Accepted
                   </td>
-                  <td class="py-4 px-6 whitespace-nowrap">
+                  <td className="py-4 px-6 whitespace-nowrap">
                     <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
                       View Details
                     </div>
@@ -87,8 +87,8 @@ export default function Claims() {
             </div>
           </div>
           <div className="py-6">
-            <table class="min-w-full">
-              <thead class="text-lg text-[#7A7A7A] font-semibold border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700">
+            <table className="min-w-full">
+              <thead className="text-lg text-[#7A7A7A] font-semibold border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700">
                 <tr>
                   <th>Claim ID</th>
                   <th>Policyholder Address</th>
@@ -97,13 +97,13 @@ export default function Claims() {
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
-                  <td class="py-4 px-6 whitespace-nowrap">1</td>
-                  <td class="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td class="py-4 px-6 whitespace-nowrap text-[#F93636]">
+                <tr className="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
+                  <td className="py-4 px-6 whitespace-nowrap">1</td>
+                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
+                  <td className="py-4 px-6 whitespace-nowrap text-[#F93636]">
                     Accepted
                   </td>
-                  <td class="py-4 px-8 ml-15 whitespace-nowrap text">
+                  <td className="py-4 px-8 ml-15 whitespace-nowrap text">
                     <div
                       className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white"
                       onClick={handleClick}
@@ -113,26 +113,26 @@ export default function Claims() {
                   </td>
                 </tr>
 
-                <tr class="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
-                  <td class="py-4 px-6 whitespace-nowrap">1</td>
-                  <td class="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td class="py-4 px-6 whitespace-nowrap text-[#F93636]">
+                <tr className="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
+                  <td className="py-4 px-6 whitespace-nowrap">1</td>
+                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
+                  <td className="py-4 px-6 whitespace-nowrap text-[#F93636]">
                     Accepted
                   </td>
-                  <td class="py-4 px-8 whitespace-nowrap">
+                  <td className="py-4 px-8 whitespace-nowrap">
                     <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
                       View Details
                     </div>
                   </td>
                 </tr>
 
-                <tr class="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
-                  <td class="py-4 px-6 whitespace-nowrap">1</td>
-                  <td class="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td class="py-4 px-6 whitespace-nowrap text-[#F93636]">
+                <tr className="border-b dark:bg-gray-800 dark:border-[#7A7A7A]-700 text-lg text-[#7A7A7A] font-regular text-center">
+                  <td className="py-4 px-6 whitespace-nowrap">1</td>
+                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
+                  <td className="py-4 px-6 whitespace-nowrap text-[#F93636]">
                     Accepted
                   </td>
-                  <td class="py-4 px-8 whitespace-nowrap">
+                  <td className="py-4 px-8 whitespace-nowrap">
                     <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
                       View Details
                     </div>
