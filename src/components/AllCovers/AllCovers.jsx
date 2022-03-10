@@ -1,12 +1,11 @@
 import React from "react";
 import Cards from "../Cards/Cards";
+import CoverCard from "../Cards/CoverCard";
 
 function AllCovers() {
   return (
     <div>
-      AllCovers
-      
-      <Cards />
+      <CoverCard />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bottom-0">
+    <div className="bottom-0 w-full fixed overflow-hidden">
       <div className="py-4">
         <div className="w-full border-t border-[#7b7a7a]"></div>
       </div>

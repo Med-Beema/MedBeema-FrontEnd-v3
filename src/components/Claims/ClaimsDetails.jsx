@@ -16,7 +16,7 @@ export default function ClaimsDetails() {
           </div>
         </div>
         <div>
-          <ClaimResult />
+          <ClaimResult quorum={50} voters={50} />
         </div>
         <div className=" claimDetails mt-6 mx-10 panelBody">
           {" "}

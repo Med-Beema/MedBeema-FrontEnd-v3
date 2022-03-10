@@ -52,7 +52,10 @@ export default function Claims() {
                     Accepted
                   </td>
                   <td class="py-4 px-6 whitespace-nowrap">
-                    <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
+                    <div
+                      className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white"
+                      onClick={handleClick}
+                    >
                       View Details
                     </div>
                   </td>

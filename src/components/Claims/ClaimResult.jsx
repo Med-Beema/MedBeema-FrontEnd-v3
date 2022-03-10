@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ClaimResult() {
+export default function ClaimResult({ quorum, voters }) {
   return (
     <div>
       <div className="myClaims">
@@ -36,7 +36,7 @@ export default function ClaimResult() {
               <div className="w-full h-full bg-gray-200 absolute"></div>
               <div
                 className="h-full bg-mb-green absolute"
-                style={{ width: "25%" }}
+                style={{ width: quorum + "%" }}
               ></div>
             </div>
             <div>
@@ -49,7 +49,7 @@ export default function ClaimResult() {
               <div className="w-full h-full bg-[#fc0307] absolute"></div>
               <div
                 className="h-full bg-mb-green absolute"
-                style={{ width: "25%" }}
+                style={{ width: voters + "%" }}
               ></div>
             </div>
             <div>
