@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./claims.css";
 
 export default function Claims() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    console.log("s");
+    navigate("../claimdetails");
+  };
   return (
     <div>
       <div className="myClaims">
@@ -94,7 +101,10 @@ export default function Claims() {
                     Accepted
                   </td>
                   <td className="py-4 px-8 ml-15 whitespace-nowrap text">
-                    <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
+                    <div
+                      className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white"
+                      onClick={handleClick}
+                    >
                       View Details
                     </div>
                   </td>
