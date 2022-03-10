@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AllCovers from "../components/AllCovers/AllCovers";
+import ClaimResult from "../components/Claims/ClaimResult";
+import ClaimsDetails from "../components/Claims/ClaimsDetails";
 import MyDetails from "../components/MyDetails/MyDetails";
 import ClaimsPage from "../views/ClaimsPage";
 import CoverPage from "../views/CoverPage";
@@ -15,6 +17,8 @@ function AppRoute() {
       </Route>
       <Route path="/tokens" element={<TokenPage />} />
       <Route path="/claims" element={<ClaimsPage />} />
+      <Route path="/claimdetails" element={<ClaimsDetails />} />
+      <Route path="/claimresults" element={<ClaimResult />} />
     </Routes>
   );
 }
