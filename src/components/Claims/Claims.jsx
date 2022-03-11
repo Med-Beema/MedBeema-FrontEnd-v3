@@ -129,8 +129,8 @@ export default function Claims() {
                 <tr className="border-b  text-lg text-[#7A7A7A] font-regular text-center">
                   <td className="py-4 px-6 whitespace-nowrap">1</td>
                   <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td className="py-4 px-6 whitespace-nowrap text-[#F93636]">
-                    Rejected
+                  <td className="py-4 px-6 whitespace-nowrap text-[#ebe834]">
+                    Voting
                   </td>
                   <td className="py-4 px-8 whitespace-nowrap  grid place-content-center">
                     <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
@@ -140,9 +140,6 @@ export default function Claims() {
                 </tr>
               </tbody>
             </table>
-            <div className="py-8 mr-80 text-right text-lg text-purple font-regular">
-              Voting
-            </div>
           </div>
         </div>
       </div>
