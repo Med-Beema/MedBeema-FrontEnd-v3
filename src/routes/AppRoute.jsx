@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import AllCovers from "../components/AllCovers/AllCovers";
 import ClaimResult from "../components/Claims/ClaimResult";
 import Claims from "../components/Claims/Claims";
+import FileClaimForm from "../components/Claims/FileClaimForm";
 import ClaimsDetails from "../components/Claims/ClaimsDetails";
 import MyDetails from "../components/MyDetails/MyDetails";
 import MyDetailsFront from "../components/MyDetails/MyDetailsFront";
@@ -25,6 +26,7 @@ function AppRoute() {
       <Route path="/claims" element={<ClaimsPage />} />
       <Route path="/claimdetails" element={<ClaimsDetails />} />
       <Route path="/claimresults" element={<ClaimResult />} />
+      <Route path="/fileclaim" element={<FileClaimForm />} />
       <Route path="/stake" element={<Stake />} />
     </Routes>
   );
