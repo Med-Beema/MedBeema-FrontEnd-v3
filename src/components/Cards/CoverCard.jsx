@@ -2,6 +2,7 @@ import React from "react";
 import image from "../.././MedBeema.ico";
 import { savePolicy } from "../../Controllers/policy";
 export default function CoverCard() {
+  const dateNow = new Date();
   const handleClick = () => {
     savePolicy();
   };
@@ -45,9 +46,12 @@ export default function CoverCard() {
                   Valid Upto
                 </div>
                 <div className="font-[400] text-sm text-[##000000] py-5">
-                  {`${
+                  {/* {`${
                     new Date().getFullYear() + 1
-                  }/${new Date().getMonth()}/${new Date().getDate()}`}
+                  }/${new Date().getMonth()}/${new Date().getDate()}`} */}
+                  {`${
+                    dateNow.getFullYear() + 1
+                  }/${dateNow.getMonth()}/${dateNow.getDate()}`}
                 </div>
               </div>
             </div>

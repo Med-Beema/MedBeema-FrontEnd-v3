@@ -46,48 +46,6 @@ export default function Claims() {
                 </tr>
               </thead>
               <tbody>
-                {/* <tr className="border-b  text-lg text-[#7A7A7A] font-regular text-center">
-                  <td className="py-4 px-6 whitespace-nowrap">1</td>
-                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td className="py-4 px-6 whitespace-nowrap text-mb-green">
-                    Accepted
-                  </td>
-                  <td className="py-4 px-8 whitespace-nowrap  grid place-content-center">
-                    <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
-                      View Details
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="border-b  text-lg text-[#7A7A7A] font-regular text-center">
-                  <td className="py-4 px-6 whitespace-nowrap">1</td>
-                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td className="py-4 px-6 whitespace-nowrap text-mb-green">
-                    Accepted
-                  </td>
-                  <td className="py-4 px-6 whitespace-nowrap  grid place-content-center">
-                    <div
-                      className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white"
-                      onClick={handleClick}
-                    >
-                      View Details
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="border-b  text-lg text-[#7A7A7A] font-regular text-center">
-                  <td className="py-4 px-6 whitespace-nowrap">1</td>
-                  <td className="py-4 px-6 whitespace-nowrap">10 Ether</td>
-                  <td className="py-4 px-6 whitespace-nowrap text-mb-green">
-                    Accepted
-                  </td>
-                  <td className="py-4 px-6 whitespace-nowrap  grid place-content-center">
-                    <div className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white">
-                      View Details
-                    </div>
-                  </td>
-                </tr> */}
-
                 {allClaimsData.map(function (claims, index) {
                   //console.log(claims);
                   return (
@@ -98,15 +56,44 @@ export default function Claims() {
                       <td className="py-4 px-6 whitespace-nowrap">
                         {claims.amount}
                       </td>
-                      <td className="py-4 px-6 whitespace-nowrap text-mb-green">
-                        {claims.status}
-                      </td>
+                      {(() => {
+                        switch (claims.status) {
+                          case "Voting":
+                            return (
+                              <td className="py-4 px-6 whitespace-nowrap text-[#ebe834]">
+                                {claims.status}
+                              </td>
+                            );
+                          case "Assessment":
+                            return (
+                              <td className="py-4 px-6 whitespace-nowrap text-mb-purple">
+                                {claims.status}
+                              </td>
+                            );
+                          case "Accepted":
+                            return (
+                              <td className="py-4 px-6 whitespace-nowrap text-mb-green">
+                                {claims.status}
+                              </td>
+                            );
+                          case "Rejected":
+                            return (
+                              <td className="py-4 px-6 whitespace-nowrap text-[#F93636]">
+                                {claims.status}
+                              </td>
+                            );
+                          default:
+                            return null;
+                        }
+                      })()}
                       <td className="py-4 px-6 whitespace-nowrap  grid place-content-center">
                         <div
                           className="bg-mb-purple rounded-lg text-sm py-1 px-1 w-24 text-white"
                           // onClick={handleClick}
                         >
-                          <Link to="/claimdetails/${}">View Details</Link>
+                          <Link to={`/claimdetails/${claims.claimId}`}>
+                            View Details
+                          </Link>
                         </div>
                       </td>
                     </tr>

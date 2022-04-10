@@ -8,6 +8,7 @@ import ClaimsDetails from "../components/Claims/ClaimsDetails";
 import MyDetails from "../components/MyDetails/MyDetails";
 import MyDetailsFront from "../components/MyDetails/MyDetailsFront";
 import Stake from "../components/Stake/Stake";
+import AssessmentCard from "../components/Cards/AssessmentCard";
 import ClaimsPage from "../views/ClaimsPage";
 import CoverPage from "../views/CoverPage";
 import TokenPage from "../views/TokenPage";
@@ -24,10 +25,11 @@ function AppRoute() {
       <Route path="/KYC" element={<MyDetails />} />
       <Route path="/tokens" element={<TokenPage />} />
       <Route path="/claims" element={<ClaimsPage />} />
-      <Route path="/claimdetails" element={<ClaimsDetails />} />
+      <Route path="/claimdetails/:claimID" element={<ClaimsDetails />} />
       <Route path="/claimresults" element={<ClaimResult />} />
       <Route path="/fileclaim" element={<FileClaimForm />} />
       <Route path="/stake" element={<Stake />} />
+      <Route path="/assessment" element={<AssessmentCard />} />
     </Routes>
   );
 }
