@@ -7,7 +7,7 @@ export default function Stake() {
         <div className="px-40 mt-20 grid place-items-left bg-[#f9f9fe]">
           <div className="w-[500px] h-[350px] rounded shadow-md shadow-[4px 4px 4px rgba(0, 0, 0, 0.25)] bg-[#ffffff]">
             <div className="m-10 space-y-4">
-              <label class="text-black text-lg font-regular" for="username">
+              <label className="text-black text-lg font-regular" for="username">
                 Number of Tokens
               </label>
               <input
@@ -25,7 +25,7 @@ export default function Stake() {
         </div>
         <div className="px-40 mt-20 grid place-items-left bg-[#f9f9fe]">
           <div className="w-[500px] h-[350px] rounded shadow-md shadow-[4px 4px 4px rgba(0, 0, 0, 0.25)] bg-[#ffffff]">
-            <div class="m-10 space-y-4">
+            <div className="m-10 space-y-4">
               <label className="text-black text-lg font-regular" for="username">
                 Number of Tokens
               </label>

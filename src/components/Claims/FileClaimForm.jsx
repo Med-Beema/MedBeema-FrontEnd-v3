@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import FormGroup from "../common/FormGroup";
 import axios from "axios";
+import { saveClaim } from "../../Controllers/claim";
+import Constants from "../../constants";
 
 function FileClaimForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -48,13 +50,16 @@ function FileClaimForm() {
       e.preventDefault();
       e.stopPropagation();
     } else {
+      e.preventDefault();
+      e.stopPropagation();
       console.log(values);
       axios
-        .post("http://localhost:5000/api/data", values)
+        .post(`${Constants.baseURL}/api/data`, values)
         .then((response) => {
           console.log(response);
           setIsSubmitted(true);
         })
+        .then(saveClaim(values))
         .catch((error) => {
           console.log(error);
         });
@@ -69,7 +74,13 @@ function FileClaimForm() {
           encType="multipart/form-data"
           onSubmit={handleSubmit}
         >
-          <FormGroup labelName="Amount" name="amount" type="number" />
+          <FormGroup
+            labelName="Amount"
+            name="amount"
+            type="number"
+            handleChange={handleChange}
+            value={values.amount}
+          />
           <FormGroup
             labelName="Name of Institution"
             name="institutionName"

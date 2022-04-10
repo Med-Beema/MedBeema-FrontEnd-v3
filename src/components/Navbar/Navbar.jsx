@@ -1,7 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { setUserId } from "../../Controllers/user";
 
 function Navbar() {
+  const handleClick = () => {
+    setUserId(123);
+  };
   return (
     <div className=" bg-mb-black-100 text-white">
       <div className="container">
@@ -23,7 +27,10 @@ function Navbar() {
             </NavLink>
           </ul>
 
-          <button className="bg-mb-purple rounded-lg py-2.5 px-7">
+          <button
+            className="bg-mb-purple rounded-lg py-2.5 px-7"
+            onClick={handleClick}
+          >
             Connect Wallet
           </button>
         </nav>
