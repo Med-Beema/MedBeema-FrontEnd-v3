@@ -29,7 +29,7 @@ function AppRoute() {
       <Route path="/claimresults" element={<ClaimResult />} />
       <Route path="/fileclaim" element={<FileClaimForm />} />
       <Route path="/stake" element={<Stake />} />
-      <Route path="/assessment" element={<AssessmentCard />} />
+      <Route path="/assessment/:claimID" element={<AssessmentCard />} />
     </Routes>
   );
 }

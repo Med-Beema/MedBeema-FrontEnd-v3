@@ -70,17 +70,20 @@ export default function ClaimResult({ claimDetail }) {
             switch (claimDetail.status) {
               case "Voting":
                 return (
-                  <div className="progressBar mt-10 pb-8">
+                  <div className="progressBar mt-10">
+                    <label className="text-lg font-medium">Quorum</label>
                     <div className="h-5 relative  rounded-full overflow-hidden">
-                      <div className="w-full h-full bg-[#fc0307] absolute"></div>
+                      <div className="w-full h-full bg-gray-200 absolute"></div>
                       <div
                         className="h-full bg-mb-green absolute"
-                        style={{ width: claimDetail.voteFor + "%" }}
+                        style={{
+                          width: claimDetail.quorum  + "%",
+                        }}
                       ></div>
                     </div>
                     <div>
-                      <label className="float-left">For</label>
-                      <label className="float-right">Against</label>
+                      <label className="float-left">0</label>
+                      <label className="float-right">100</label>
                     </div>
                   </div>
                 );
@@ -96,7 +99,7 @@ export default function ClaimResult({ claimDetail }) {
                         <div
                           className="h-full bg-mb-green absolute"
                           style={{
-                            width: (claimDetail.quorum / 10000) * 100 + "%",
+                            width: claimDetail.quorum + "%",
                           }}
                         ></div>
                       </div>
@@ -130,7 +133,7 @@ export default function ClaimResult({ claimDetail }) {
                         <div
                           className="h-full bg-mb-green absolute"
                           style={{
-                            width: (claimDetail.quorum / 10000) * 100 + "%",
+                            width: claimDetail.quorum  + "%",
                           }}
                         ></div>
                       </div>

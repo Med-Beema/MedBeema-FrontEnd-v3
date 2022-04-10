@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams,Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import ClaimResult from "./ClaimResult";
 import Constants from "../../constants";
 import AssessmentCard from "../Cards/AssessmentCard";
 
 export default function ClaimsDetails() {
+  const navigate = useNavigate();
   const { claimID } = useParams();
   const [allClaimsData, setAllClaimsData] = useState({});
   const [loading, setLoading] = useState(false);
@@ -24,6 +25,7 @@ export default function ClaimsDetails() {
     axios.put(`${Constants.baseURL}/voteFor/${claimID}`).then((res) => {
       console.log(res);
       if (res.status === 200) {
+        navigate("../claims");
       }
     });
   }
@@ -32,12 +34,11 @@ export default function ClaimsDetails() {
     axios.put(`${Constants.baseURL}/voteAgainst/${claimID}`).then((res) => {
       console.log(res);
       if (res.status === 200) {
+        navigate("../claims");
       }
     });
   }
-  function assessment(e) {
-    
-  }
+  function assessment(e) {}
   const date = new Date(allClaimsData.createdDate);
   return (
     <div>
@@ -54,13 +55,9 @@ export default function ClaimsDetails() {
                     >
                       Accept Claim
                     </button>
-                    <button
-                      className="bg-[#fc0307] rounded-lg text-white py-2.5 px-7"
-                     
-                    ><Link to={`/assessment`}>
-                    View Details
-                  </Link>
-                      
+                    <button className="bg-[#fc0307] rounded-lg text-white py-2.5 px-7"
+                     onClick={rejectClaim}>
+                      Reject Claim
                     </button>
                   </div>
                 );
@@ -71,7 +68,7 @@ export default function ClaimsDetails() {
                       className="bg-mb-green rounded-lg text-white py-2.5 px-7"
                       onClick={assessment}
                     >
-                      Assessment
+                      <Link to={`/assessment/${claimID}`}>Assessment</Link>
                     </button>
                   </div>
                 );
